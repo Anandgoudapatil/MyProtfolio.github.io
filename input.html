@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>MyPortFolio</title>
+</head>
+
+<body>
+  <!-- START HERE -->
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">MyPortFolio</a>
+     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+       <ul class="navbar-nav ml-auto">
+      <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="nav-item active"><a href="input.html" class="nav-link">Create</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+       </ul>
+     </div>
+    </div>
+  </nav>
+<!-- section -->
+<section id="input-from">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-8 col-md-offset-2">
+        <form>
+          <div class="form-group">
+            <h4 class="text-center py-2">Home Page Content</h4>
+             <label for="name" class="mt-5">Name</label>
+             <input type="text" class="form-control" id="name" placeholder="enter your name" required>         
+          </div>
+          <div class="form-group">
+            <label for="home-intro" class="mt-2">Your Work Small Summary</label>
+            <input type="text" class="form-control" id="home-intro" placeholder="Ex:Specilized In Graphical Design,UI/UX And Photography" required>         
+         </div>
+          <div class="form-group">
+            <label for="profile1" class="mt-2">Job Profile 1</label>
+            <input type="text" class="form-control" id="profile1" placeholder="Ex:Photographer" required>         
+         </div>
+         <div class="form-group">
+          <label for="profile2" class="mt-2">Job Profile 2</label>
+          <input type="text" class="form-control" id="profile2" placeholder="Ex:UX/UI Designer" required>         
+       </div>
+       <div class="form-group">
+        <label for="phone" class="mt-2">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Ex:8888855555" required>         
+     </div>
+       <div class="form-group">
+        <label for="email" class="mt-2">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Ex:xyz@gmail.com" required>         
+     </div>
+     <div class="form-group">
+      <label for="address" class="mt-2">Address</label>
+      <textarea class="form-control" id="address" placeholder="5th main,rvce Banglore" rows="2" required></textarea>   
+   </div>
+       <div id="accordion">
+         <h5>Specialization in</h5>
+         <div class="card">
+           <div class="card-header py-1">
+             <h5>
+               <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                <i class="fas fa-arrow-circle-down"></i>First
+               </div>
+             </h5>
+           </div>
+           <div class="collapse show" id="collapse1">
+             <div class="card-body">
+              <div class="form-group">
+                <label for="sp-h-1" class="mt-2">Heading</label>
+                <input type="text" class="form-control" id="sp-h-1" placeholder="Ex:UX/UI Designer" required>         
+                <label for="sp-f-1" class="mt-2">FontAsome Class Name</label>
+                <input type="text" class="form-control" id="sp-f-1" placeholder="Ex:fa-user" required> 
+                 <div class="form-group">
+                  <label for="sp-p-1" class="mt-2">Short Summary</label>
+                  <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+               </div>
+              </div>
+            </div>
+           </div>
+          </div>
+         <div class="card">
+          <div class="card-header py-1">
+            <h5>
+              <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+               <i class="fas fa-arrow-circle-down"></i>Second
+              </div>
+            </h5>
+          </div>
+          <div class="collapse" id="collapse2">
+            <div class="card-body">
+             <div class="form-group">
+              <label for="sp-h-2" class="mt-2">Heading</label>
+              <input type="text" class="form-control" id="sp-h-2" placeholder="Ex:Concepting" required>         
+              <label for="sp-f-2" class="mt-2">FontAsome Class Name</label>
+                <input type="text" class="form-control" id="sp-f-2" placeholder="Ex:fa-user" required> 
+              <div class="form-group">
+                <label for="sp-p-1" class="mt-2">Short Summary</label>
+                <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+             </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header py-1">
+            <h5>
+              <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+               <i class="fas fa-arrow-circle-down"></i>Third
+              </div>
+            </h5>
+          </div>
+          <div class="collapse" id="collapse3">
+            <div class="card-body">
+             <div class="form-group">
+              <label for="sp-h-3" class="mt-2">Heading</label>
+              <input type="text" class="form-control" id="sp-h-3" placeholder="Ex:Visual Designer" required>         
+              <label for="sp-f-3" class="mt-2">FontAsome Class Name</label>
+              <input type="text" class="form-control" id="sp-f-3" placeholder="Ex:fa-user" required> 
+              <div class="form-group">
+                <label for="sp-p-1" class="mt-2">Short Summary</label>
+                <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+             </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header py-1">
+            <h5>
+              <div href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+               <i class="fas fa-arrow-circle-down"></i>Fourth
+              </div>
+            </h5>
+          </div>
+          <div class="collapse" id="collapse4">
+            <div class="card-body">
+             <div class="form-group">
+              <label for="sp-h-4" class="mt-2">Heading</label>
+              <input type="text" class="form-control" id="sp-h-4" placeholder="Ex:Interaction" required>         
+              <label for="sp-f-4" class="mt-2">FontAsome Class Name</label>
+                <input type="text" class="form-control" id="sp-f-4" placeholder="Ex:fa-user" required> 
+              <div class="form-group">
+                <label for="sp-p-1" class="mt-2">Short Summary</label>
+                <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+             </div>
+            </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="form-group">
+       <div class="form-group">
+          <label for="n-c" class="mt-2">Number of Clients Worked With</label>
+          <input type="number" min="0"class="form-control" id="n-c" placeholder="Ex:25" required>         
+       </div>
+       <div class="form-group">
+        <label for="n-a" class="mt-2">Number of Awards</label>
+        <input type="number" class="form-control"  min="0" id="n-a" placeholder="Ex:25" required>         
+     </div>
+     <div class="form-group">
+      <label for="n-h" class="mt-2" >Number of Hours Worked</label>
+      <input type="number" class="form-control"  min="0" id="n-h" placeholder="Ex:25" required>         
+    </div>
+   <div class="form-group">
+    <label for="n-p" class="mt-2" >Number of Project Completed</label>
+    <input type="number"   min="0" class="form-control" id="n-p" placeholder="Ex:25" required>         
+    </div>
+  </div>
+  <div id="accordion-1">
+    <h5>Your Creative Process</h5>
+    <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea11" data-toggle="collapse" data-parent="#accordion-1">
+           <i class="fas fa-arrow-circle-down"></i>First
+          </div>
+        </h5>
+      </div>
+      <div class="collapse show" id="collapsea11">
+        <div class="card-body">
+         <div class="form-group">
+           <label for="a1-sp-h-1" class="mt-2">Heading</label>
+           <input type="text" class="form-control" id="a1-sp-h-1" placeholder="Ex:Dicuss The Project" required>         
+           <label for="a1-sp-f-1" class="mt-2">FontAsome Class Name</label>
+           <input type="text" class="form-control" id="a1-sp-f-1" placeholder="Ex:fa-user" required> 
+           <div class="form-group">
+            <label for="a1-n-p-1" class="mt-2" >Number of Process Completed</label>
+            <input type="number"  min="0" class="form-control" id="a1-n-p-1" placeholder="Ex:25" required>         
+            </div> 
+           <div class="form-group">
+             <label for="a1-sp-p-1" class="mt-2">Short Summary</label>
+             <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+          </div>
+         </div>
+       </div>
+      </div>
+     </div>
+    <div class="card">
+     <div class="card-header py-1">
+       <h5>
+         <div href="#collapsea12" data-toggle="collapse" data-parent="#accordion-1">
+          <i class="fas fa-arrow-circle-down"></i>Second
+         </div>
+       </h5>
+     </div>
+     <div class="collapse" id="collapsea12">
+       <div class="card-body">
+        <div class="form-group">
+         <label for="a1-sp-h-2" class="mt-2">Heading</label>
+         <input type="text" class="form-control" id="a1-sp-h-2" placeholder="Ex:Concepting" required>         
+         <label for="a1-sp-f-2" class="mt-2">FontAsome Class Name</label>
+           <input type="text" class="form-control" id="a1-sp-f-2" placeholder="Ex:fa-user" required> 
+           <div class="form-group">
+            <label for="a1-n-p-2" class="mt-2" >Number of Process Completed</label>
+            <input type="number"  min="0" class="form-control" id="a1-n-p-2" placeholder="Ex:25" required>         
+            </div>
+           <div class="form-group">
+           <label for="a1-sp-t-1" class="mt-2">Short Summary</label>
+           <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+        </div>
+       </div>
+       </div>
+     </div>
+   </div>
+   <div class="card">
+     <div class="card-header py-1">
+       <h5>
+         <div href="#collapsea13" data-toggle="collapse" data-parent="#accordion-1">
+          <i class="fas fa-arrow-circle-down"></i>Third
+         </div>
+       </h5>
+     </div>
+     <div class="collapse" id="collapsea13">
+       <div class="card-body">
+        <div class="form-group">
+         <label for="a1-sp-h-3" class="mt-2">Heading</label>
+         <input type="text" class="form-control" id="a1-sp-h-3" placeholder="Ex:Visual Planning" required>         
+         <label for="a1-sp-f-3" class="mt-2">FontAsome Class Name</label>
+         <input type="text" class="form-control" id="a1-sp-f-3" placeholder="Ex:fa-user" required> 
+         <div class="form-group">
+          <label for="a1-n-p-3" class="mt-2">Number of Process Completed/label>
+          <input type="number" class="form-control"   min="0" id="a1-n-p-3" placeholder="Ex:25" required>         
+          </div>
+         <div class="form-group">
+           <label for="a1-sp-p-3" class="mt-2">Short Summary</label>
+           <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+        </div>
+       </div>
+       </div>
+     </div>
+   </div>
+   <div class="card">
+     <div class="card-header py-1">
+       <h5>
+         <div href="#collapsea14" data-toggle="collapse" data-parent="#accordion-1">
+          <i class="fas fa-arrow-circle-down"></i>Fourth
+         </div>
+       </h5>
+     </div>
+     <div class="collapse" id="collapsea14">
+       <div class="card-body">
+        <div class="form-group">
+         <label for="a1-sp-h-4" class="mt-2">Heading</label>
+         <input type="text" class="form-control" id="a1-sp-h-4" placeholder="Ex:Interaction" required>         
+         <label for="a1-sp-f-4" class="mt-2">FontAsome Class Name</label>
+           <input type="text" class="form-control" id="a1-sp-f-4" placeholder="Ex:fa-user" required> 
+           <div class="form-group">
+            <label for="a1-n-p-4" class="mt-2">Number of Process Completed</label>
+            <input type="number"   min="0" class="form-control" id="a1-n-p-4" placeholder="Ex:25" required>         
+            </div>
+           <div class="form-group">
+           <label for="a1-sp-p-4" class="mt-2">Short Summary</label>
+           <textarea class="form-control" id="profile2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+        </div>
+       </div>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- about -->
+       <h4 class="text-center py-5">About Me Page Content</h4>
+       <div class="form-group">
+        <label for="about-intro" class="mt-2">Your small summary</label>
+        <input type="text" class="form-control" id="about-intro" placeholder="Ex:Let Me Tell Me About My Self And What I Do" required>         
+     </div>
+     <div class="form-group">
+      <label for="about-intro" class="mt-2">any thing you what to say</label>
+      <input type="text" class="form-control" id="about-intro" placeholder="Ex:Your Project is in Safe Hands" required>         
+   </div>  
+   <div class="form-group">
+    <label for="about-img" class="mt-2">Your Image</label>
+    <input type="file" class="form-control" id="about-img" required>         
+  </div>
+   <div class="form-group">
+    <label for="about-summary" class="mt-2">Summary</label>
+    <textarea class="form-control" id="about-summary" placeholder="Write Summary About Your Self" rows="4" required></textarea> 
+   </div>  
+   <div id="accordion-3">
+    <h5>Awards Own</h5>
+    <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea31" data-toggle="collapse" data-parent="#accordion-3">
+           <i class="fas fa-arrow-circle-down"></i>First
+          </div>
+        </h5>
+      </div>
+      <div class="collapse show" id="collapsea31">
+        <div class="card-body">
+         <div class="form-group">
+           <label for="a3-sp-h-1" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a3-sp-h-1" required>         
+            <div class="form-group">
+             <label for="a3-sp-p-1" class="mt-2">Short Summary</label>
+             <textarea class="form-control" id="a3-sp-p-1" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+          </div>
+         </div>
+       </div>
+      </div>
+     </div>
+    <div class="card">
+     <div class="card-header py-1">
+       <h5>
+         <div href="#collapsea32" data-toggle="collapse" data-parent="#accordion-3">
+          <i class="fas fa-arrow-circle-down"></i>Second
+         </div>
+       </h5>
+     </div>
+     <div class="collapse" id="collapsea32">
+       <div class="card-body">
+        <div class="form-group">
+         <label for="a3-sp-h-2" class="mt-2">Title</label>
+         <input type="text" class="form-control" id="a3-sp-h-2" required>        
+         <div class="form-group">
+           <label for="a3-sp-p-2" class="mt-2">Short Summary</label>
+           <textarea class="form-control" id="a3-sp-p-2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+        </div>
+       </div>
+       </div>
+     </div>
+   </div>
+   <div class="card">
+     <div class="card-header py-1">
+       <h5>
+         <div href="#collapsea33" data-toggle="collapse" data-parent="#accordion-3">
+          <i class="fas fa-arrow-circle-down"></i>Third
+         </div>
+       </h5>
+     </div>
+     <div class="collapse" id="collapsea33">
+       <div class="card-body">
+        <div class="form-group">
+         <label for="a3-sp-h-3" class="mt-2">Title</label>
+         <input type="text" class="form-control" id="a3-sp-h-3" required>         
+         <div class="form-group">
+           <label for="a3-sp-p-3" class="mt-2">Short Summary</label>
+           <textarea class="form-control" id="a3-sp-p-3" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+        </div>
+       </div>
+       </div>
+     </div>
+   </div>
+  </div>
+  <div class="form-group">
+    <h5>Techincal Skills</h5>
+    <div class="form-group">
+      <input type="text" class="form-control" id="about-tec11" placeholder="Ex:HTML & CSS:" required> 
+      <input type="range" min="0" max="100" class="form-control" id="about-tec12"  required>         
+   </div>
+   <div class="form-group">
+    <input type="text" class="form-control" id="about-tec21" placeholder="Ex:ADOBE ILLUSTRATOR:" required> 
+    <input type="range" min="0" max="100" class="form-control" id="about-tec22"  required>         
+ </div>
+ <div class="form-group">
+  <input type="text" class="form-control" id="about-tec31" placeholder="Ex:WORDPRESS:" required> 
+  <input type="range" min="0" max="100" class="form-control" id="about-tec32"  required>         
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" id="about-tec41" placeholder="Ex:PHOTOGRAPHY:" required> 
+  <input type="range" min="0" max="100" class="form-control" id="about-tec42"  required>         
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" id="about-tec51" placeholder="Ex:MAGENTO" required> 
+  <input type="range" min="0" max="100" class="form-control" id="about-tec52"  required>         
+</div>
+  </div>
+   <div class="form-group">
+    <label for="about-logo1" class="mt-2">Your Client Company Logos</label>
+    <input type="file" class="form-control" id="about-logo1" required>  
+    <input type="file" class="form-control" id="about-logo2" required>  
+    <input type="file" class="form-control" id="about-logo3" required>  
+    <input type="file" class="form-control" id="about-logo4" required>    
+     </div>
+     <div id="accordion-4">
+      <h5>Clients Review</h5>
+      <div class="card">
+        <div class="card-header py-1">
+          <h5>
+            <div href="#collapsea41" data-toggle="collapse" data-parent="#accordion-4">
+             <i class="fas fa-arrow-circle-down"></i>First
+            </div>
+          </h5>
+        </div>
+        <div class="collapse show" id="collapsea41">
+          <div class="card-body">
+           <div class="form-group">
+             <label for="a4-sp-h-1" class="mt-2">Name</label>
+             <input type="text" class="form-control" id="a4-sp-h-1" required> 
+             <label for="a4-sp-f-1" class="mt-2">image</label>   
+             <input type="file" class="form-control" id="a4-sp-f-1" required>       
+              <div class="form-group">
+               <label for="a4-sp-p-1" class="mt-2">Short Summary</label>
+               <textarea class="form-control" id="a4-sp-p-1" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+            </div>
+           </div>
+         </div>
+        </div>
+       </div>
+      <div class="card">
+       <div class="card-header py-1">
+         <h5>
+           <div href="#collapsea42" data-toggle="collapse" data-parent="#accordion-4">
+            <i class="fas fa-arrow-circle-down"></i>Second
+           </div>
+         </h5>
+       </div>
+       <div class="collapse" id="collapsea42">
+         <div class="card-body">
+          <div class="form-group">
+           <label for="a4-sp-h-2" class="mt-2">Name</label>
+           <input type="text" class="form-control" id="a4-sp-h-2" required>   
+           <label for="a4-sp-f-2" class="mt-2">image</label>   
+             <input type="file" class="form-control" id="a4-sp-f-2" required>      
+           <div class="form-group">
+             <label for="a4-sp-p-2" class="mt-2">Short Summary</label>
+             <textarea class="form-control" id="a4-sp-p-2" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+          </div>
+         </div>
+         </div>
+       </div>
+     </div>
+     <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea43" data-toggle="collapse" data-parent="#accordion-4">
+           <i class="fas fa-arrow-circle-down"></i>Third
+          </div>
+        </h5>
+      </div>
+      <div class="collapse" id="collapsea43">
+        <div class="card-body">
+         <div class="form-group">
+          <label for="a4-sp-h-3" class="mt-2">Name</label>
+          <input type="text" class="form-control" id="a4-sp-h-3" required>    
+          <label for="a4-sp-f-3" class="mt-2">image</label>   
+             <input type="file" class="form-control" id="a4-sp-f-3" required>     
+          <div class="form-group">
+            <label for="a4-sp-p-3" class="mt-2">Short Summary</label>
+            <textarea class="form-control" id="a4-sp-p-3" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+         </div>
+        </div>
+        </div>
+      </div>
+    </div>
+     <div class="card">
+       <div class="card-header py-1">
+         <h5>
+           <div href="#collapsea44" data-toggle="collapse" data-parent="#accordion-4">
+            <i class="fas fa-arrow-circle-down"></i>Fourth
+           </div>
+         </h5>
+       </div>
+       <div class="collapse" id="collapsea44">
+         <div class="card-body">
+          <div class="form-group">
+           <label for="a4-sp-h-4" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a4-sp-h-4" required>         
+           <div class="form-group">
+            <label for="a4-sp-f-4" class="mt-2">image</label>   
+            <input type="file" class="form-control" id="a4-sp-f-4" required> 
+             <label for="a4-sp-p-4" class="mt-2">Short Summary</label>
+             <textarea class="form-control" id="a4-sp-p-4" placeholder="Write a Short Summary About It" rows="2" required></textarea>         
+          </div> 
+         </div>
+         </div>
+       </div>
+     </div>
+    </div>
+    <div id="accordion-5">
+      <h4 class="py-4">Your Work</h4>
+      <div class="card">
+        <div class="card-header py-1">
+          <h5>
+            <div href="#collapsea51" data-toggle="collapse" data-parent="#accordion-5">
+             <i class="fas fa-arrow-circle-down"></i>First
+            </div>
+          </h5>
+        </div>
+        <div class="collapse show" id="collapsea51">
+          <div class="card-body">
+           <div class="form-group">
+             <label for="a5-sp-h-1" class="mt-2">Title</label>
+             <input type="text" class="form-control" id="a5-sp-h-1" required> 
+             <label for="a5-sp-f-1" class="mt-2">Image Of Work</label>   
+             <input type="file" class="form-control" id="a5-sp-f-1" required>       
+              <div class="form-group">
+               <label for="a5-sp-p-1" class="mt-2">Subtitle</label>
+               <input type="text" class="form-control" id="a5-sp-p-1" required>      
+            </div>
+           </div>
+         </div>
+        </div>
+       </div>
+      <div class="card">
+       <div class="card-header py-1">
+         <h5>
+           <div href="#collapsea52" data-toggle="collapse" data-parent="#accordion-5">
+            <i class="fas fa-arrow-circle-down"></i>Second
+           </div>
+         </h5>
+       </div>
+       <div class="collapse" id="collapsea52">
+         <div class="card-body">
+          <div class="form-group">
+           <label for="a5-sp-h-2" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a5-sp-h-2" required>   
+           <label for="a5-sp-f-2" class="mt-2">Image Of Work</label>   
+             <input type="file" class="form-control" id="a5-sp-f-2" required>      
+           <div class="form-group">
+             <label for="a5-sp-p-2" class="mt-2">Subtitle</label>
+             <input type="text" class="form-control" id="a5-sp-p-2" required>          
+          </div>
+         </div>
+         </div>
+       </div>
+     </div>
+     <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea53" data-toggle="collapse" data-parent="#accordion-5">
+           <i class="fas fa-arrow-circle-down"></i>Third
+          </div>
+        </h5>
+      </div>
+      <div class="collapse" id="collapsea53">
+        <div class="card-body">
+         <div class="form-group">
+          <label for="a5-sp-h-3" class="mt-2">Tile</label>
+          <input type="text" class="form-control" id="a5-sp-h-3" required>    
+          <label for="a5-sp-f-3" class="mt-2">Image Of Work</label>   
+             <input type="file" class="form-control" id="a5-sp-f-3" required>     
+          <div class="form-group">
+            <label for="a5-sp-p-3" class="mt-2">Subtitle</label>
+            <input type="text" class="form-control" id="a5-sp-p-3" required>           
+         </div>
+        </div>
+        </div>
+      </div>
+    </div>
+     <div class="card">
+       <div class="card-header py-1">
+         <h5>
+           <div href="#collapsea54" data-toggle="collapse" data-parent="#accordion-5">
+            <i class="fas fa-arrow-circle-down"></i>Fourth
+           </div>
+         </h5>
+       </div>
+       <div class="collapse" id="collapsea54">
+         <div class="card-body">
+          <div class="form-group">
+           <label for="a5-sp-h-4" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a5-sp-h-4" required>         
+           <div class="form-group">
+            <label for="a5-sp-f-4" class="mt-2">Image Of Work</label>   
+            <input type="file" class="form-control" id="a5-sp-f-4" required> 
+             <label for="a5-sp-p-4" class="mt-2">Subtitle</label>
+             <input type="text" class="form-control" id="a5-sp-p-4" required>          
+          </div>
+         </div>
+         </div>
+       </div>
+     </div>
+     <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea55" data-toggle="collapse" data-parent="#accordion-5">
+           <i class="fas fa-arrow-circle-down"></i>Fifth
+          </div>
+        </h5>
+      </div>
+      <div class="collapse" id="collapsea55">
+        <div class="card-body">
+         <div class="form-group">
+           <label for="a5-sp-h-5" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a5-sp-h-5" required> 
+           <label for="a5-sp-f-5" class="mt-2">Image Of Work</label>   
+           <input type="file" class="form-control" id="a5-sp-f-5" required>       
+            <div class="form-group">
+             <label for="a5-sp-p-5" class="mt-2">Subtitle</label>
+             <input type="text" class="form-control" id="a5-sp-p-5" required>      
+          </div>
+         </div>
+       </div>
+      </div>
+     </div>
+     <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea56" data-toggle="collapse" data-parent="#accordion-5">
+           <i class="fas fa-arrow-circle-down"></i>Sixth
+          </div>
+        </h5>
+      </div>
+      <div class="collapse" id="collapsea56">
+        <div class="card-body">
+         <div class="form-group">
+           <label for="a5-sp-h-6" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a5-sp-h-6" required> 
+           <label for="a5-sp-f-6" class="mt-2">Image Of Work</label>   
+           <input type="file" class="form-control" id="a5-sp-f-6" required>       
+            <div class="form-group">
+             <label for="a5-sp-p-6" class="mt-2">Subtitle</label>
+             <input type="text" class="form-control" id="a5-sp-p-6" required>      
+          </div>
+         </div>
+       </div>
+      </div>
+     </div>
+     <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea57" data-toggle="collapse" data-parent="#accordion-5">
+           <i class="fas fa-arrow-circle-down"></i>Seventh
+          </div>
+        </h5>
+      </div>
+      <div class="collapse" id="collapsea57">
+        <div class="card-body">
+         <div class="form-group">
+           <label for="a5-sp-h-7" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a5-sp-h-7" required> 
+           <label for="a5-sp-f-7" class="mt-2">Image Of Work</label>   
+           <input type="file" class="form-control" id="a5-sp-f-7" required>       
+            <div class="form-group">
+             <label for="a5-sp-p-7" class="mt-2">Subtitle</label>
+             <input type="text" class="form-control" id="a5-sp-p-7" required>      
+          </div>
+         </div>
+       </div>
+      </div>
+     </div>
+     <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea58" data-toggle="collapse" data-parent="#accordion-5">
+           <i class="fas fa-arrow-circle-down"></i>Eighth
+          </div>
+        </h5>
+      </div>
+      <div class="collapse" id="collapsea58">
+        <div class="card-body">
+         <div class="form-group">
+           <label for="a5-sp-h-8" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a5-sp-h-8" required> 
+           <label for="a5-sp-f-8" class="mt-2">Image Of Work</label>   
+           <input type="file" class="form-control" id="a5-sp-f-8" required>       
+            <div class="form-group">
+             <label for="a5-sp-p-8" class="mt-2">Subtitle</label>
+             <input type="text" class="form-control" id="a5-sp-p-8" required>      
+          </div>
+         </div>
+       </div>
+      </div>
+     </div>
+     <div class="card">
+      <div class="card-header py-1">
+        <h5>
+          <div href="#collapsea59" data-toggle="collapse" data-parent="#accordion-5">
+           <i class="fas fa-arrow-circle-down"></i>Nineth
+          </div>
+        </h5>
+      </div>
+      <div class="collapse" id="collapsea59">
+        <div class="card-body">
+         <div class="form-group">
+           <label for="a5-sp-h-9" class="mt-2">Title</label>
+           <input type="text" class="form-control" id="a5-sp-h-9" required> 
+           <label for="a5-sp-f-9" class="mt-2">Image Of Work</label>   
+           <input type="file" class="form-control" id="a5-sp-f-9" required>       
+            <div class="form-group">
+             <label for="a5-sp-p-9" class="mt-2">Subtitle</label>
+             <input type="text" class="form-control" id="a5-sp-p-9" required>      
+          </div>
+         </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="form-group">
+      <label for="linkedin" class="mt-2">Linkedin Profile URL</label>
+      <input type="url" class="form-control" id="linkedin"  required> 
+      <label for="insta" class="mt-2">Instagram Profile URL</label>
+      <input type="url" class="form-control" id="insta"  required> 
+      <label for="facebook" class="mt-2">Facebook Profile URL</label>
+      <input type="url" class="form-control" id="facebook"  required> 
+      <label for="twitter" class="mt-2">Twitter Profile URL</label>
+      <input type="url" class="form-control" id="twitter"  required>         
+   </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-dark btn-block btn-lg my-5" id="submit" value="Submit">
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+      <input type="reset" class="btn btn-dark btn-block btn-lg my-5" id="reset" value="Reset">
+    </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="form-group">
+        <a href="./Sample/SampleIndex.html" class="btn btn-dark btn-block btn-lg my-5" id="preview">Preview</a>
+      </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="form-group">
+        <input type="button" class="btn btn-dark btn-block btn-lg my-5 disabled" id="download" value="Download">
+      </div>
+      </div>
+    </div>
+    
+     </form>
+    </div>
+    </div>
+  </div>
+</section>
+
+ <!-- footer -->
+ <footer id="main-footer" class=" mt-2 pt-2 bg-dark text-center text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <p> Copyright &copy; <span id="year"></span> RVCE &nbsp;All Right Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>

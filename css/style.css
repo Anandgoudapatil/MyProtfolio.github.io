@@ -1,0 +1,57 @@
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+#up{
+    margin-top: -300px;
+}
+@media only screen and (max-width:600px) {
+    #up{
+        margin-top: -500px;
+        line-height: 3rem;
+    }
+    .about-who{
+        font-size: 2rem;
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+}
+#main-index{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.navbar .nav-item.active{
+    border-left:#444 3px solid;
+}
+.carousel-item{
+    height: 100vh;
+}
+.carousel-image-1{
+    background: url('../img/1.jpg') center center/cover;
+}
+.carousel-image-2{
+    background: url('../img/4.jpg') center center/cover;
+}
+.carousel-image-3{
+    background: url('../img/3.png') center center/cover;
+}
+.dark-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.5);
+}
+.dark-overlay2{
+    background: rgba(0,0,0, 0.6);
+}
+#main-contact{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    padding-top:6rem;
+}
